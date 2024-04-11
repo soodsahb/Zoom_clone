@@ -1,36 +1,34 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+(auth):- route groups:- prevent folder's name from being in url path
 
-## Getting Started
+each main component that is route group has own layout and its children will be rendered there
 
-First, run the development server:
+cn function from libs/utlis allow to add multiple and dynamic classnames  //used in sidebar
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+using SHEET shacn component for mobile nav,learend sheet close,content and sheet trigger 
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+adding clerk authenticatiion in application for easy and faster development
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+[[...sign-in]] catches all redirects and we always end up on same page
 
-## Learn More
+using appearnence object for styling clerk componenets
 
-To learn more about Next.js, take a look at the following resources:
+using stream api for implementing video calling and meeting room features
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+using useuser hook from clerk
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+"use server is used for server componenets they are also useful for using env variables for security"
 
-## Deploy on Vercel
+we are using clerk for the information that user exists or not
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+crypto.randomUUID creates random id's without installing any additonal library 
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+we are using shadc toaster here to show toasts
+
+creating one custom hook named getcallby id  for identifying currently which call we are in 
+
+in meeting room component we are using componenets directly from stream.io for layouts,we re also getting participants list and call controls from there
+
+!! double exclamation marks converts a truthy value to actual true boolean
+
+
